@@ -1,6 +1,6 @@
 import React from 'react'
 import './Million.css';
-import MVideo from '../portfolio/Million/Million.mov';
+import MVideo from '../portfolio/Million/Million2.mov';
 
 
 

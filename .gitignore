@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+safe.mpg
+/Users/derekfuchsberger/Documents/Sites/Portfolio/project/src/portfolio/Video/vid.mp4
+project/src/portfolio/Video/safe.mpg
+/Users/derekfuchsberger/Documents/Sites/Portfolio/project/src/portfolio/Million/Million.mov
+project/src/portfolio/Million/Million.mov
+ src/pages/Million.js

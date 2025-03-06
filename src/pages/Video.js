@@ -1,8 +1,8 @@
 import React from 'react'
 import './Video.css';
-import Vid1 from '../portfolio/Video/safe.mpg';
+import Vid1 from '../portfolio/Video/safe.mp4';
 import Vid2 from '../portfolio/Video/commercial.mp4';
-import Vid3 from '../portfolio/Video/vid.mp4';
+import Vid3 from '../portfolio/Video/vid2.mp4';
 
 
 function Video() {
@@ -17,7 +17,7 @@ function Video() {
         </div>
             <div class="v-container">
                 <video className="styled-v" controls>
-                    <source src={Vid1} type="video/mpg" />
+                    <source src={Vid1} type="video/mp4" />
                 </video>
                 <video className="styled-v" controls>
                     <source src={Vid2} type="video/mp4" />
