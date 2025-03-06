@@ -1,0 +1,57 @@
+/* Title and text styles */
+.v_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+
+.v_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+
+/* Video container setup */
+.v-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    gap: 60px; /* Adds space between videos */
+    height: auto; /* Height adjusts to content */
+    max-width: 600px; /* Maximum width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Styled video */
+.styled-v {
+    display: block;
+    width: 100%; /* Makes the video responsive */
+    max-width: 600px; /* Limits the max width of each video */
+    border: 3px solid #1da1f2; /* Adds a border around the video */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    margin-bottom: 40px;
+}
+
+/* Video hover effect */
+.styled-v:hover {
+    transform: scale(1.05); /* Adds a zoom effect on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .v_title {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .v_text {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .v-container {
+        flex-direction: column; /* Stacks videos vertically on smaller screens */
+        align-items: center; /* Ensures the videos are centered */
+    }
+}

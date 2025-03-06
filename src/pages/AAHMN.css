@@ -1,0 +1,77 @@
+.AA_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+.AA_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+.AA_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+         "wwp wwp phone1"
+         "phone2 shirt shirt"
+         "howl howl screen"
+         "woof woof woof";
+    gap: 10px;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto; /* Centers the container */
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Assigning the grid areas */
+.wwp { 
+    grid-area: wwp; 
+    width: 100%; 
+}
+.phone1 { 
+    grid-area: phone1; 
+    width: 100%; 
+}
+.phone2 { 
+    grid-area: phone2; 
+    width: 100%; 
+}
+.shirt { 
+    grid-area: shirt; 
+    width: 100%; 
+}
+.howl { 
+    grid-area: howl; 
+    width: 100%; 
+}
+.screen { 
+    grid-area: screen; 
+    width: 100%; 
+}
+.woof { 
+    grid-area: woof; 
+    width: 100%; 
+}
+
+@media (max-width: 1000px) {
+    .AA_title {
+        margin-right: 50px;
+        margin-left: 50px;
+   }
+    .AA_text {
+         margin-right: 50px;
+         margin-left: 50px;
+    }
+    .AA_container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas: 
+            "wwp"
+            "phone1"
+            "phone2"
+            "shirt"
+            "howl"
+            "screen"
+            "woof"; /* Stacks all items vertically */
+    }
+}

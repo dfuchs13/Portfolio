@@ -1,0 +1,38 @@
+.state_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+.state_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+.state-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers posters horizontally */
+    gap: 60px; /* Adds spacing between posters */
+    width: 100%;
+    max-width: 1000px; /* Adjust max width */
+    margin: 0 auto; /* Centers container */
+}
+.state-container img {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+}
+
+.mn2 {
+    margin-bottom: 40px;
+}
+@media (max-width: 1000px) {
+    .state_title {
+        margin-right: 50px;
+        margin-left: 50px;
+   }
+    .state_text {
+         margin-right: 50px;
+         margin-left: 50px;
+    }
+}

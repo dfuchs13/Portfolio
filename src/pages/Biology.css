@@ -1,0 +1,81 @@
+.b_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+.b_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+
+.b_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-areas: 
+         "page1 page2"
+         "acute chronic"
+         "article1 article2";
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto; /* Centers the container */
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+.b_container img {
+    width: 100%; /* Makes images responsive within their grid cells */
+    max-width: 500px; /* Ensures they don’t get too big */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: contain;
+    margin-bottom: 80px;
+}
+/* Assigning the grid areas */
+
+.page1 { 
+    grid-area: page1; 
+    width: 100%;
+}
+.page2 { 
+    grid-area: page2; 
+    width: 100%; 
+}
+.acute { 
+    grid-area: acute; 
+    width: 100%; 
+}
+.chronic { 
+    grid-area: chronic; 
+    width: 100%;
+}
+.article1 { 
+    grid-area: article1; 
+    width: 100%; 
+}
+.article2 { 
+    grid-area: article2; 
+    width: 100%; 
+}
+
+
+@media (max-width: 1000px) {
+    .b_title {
+        margin-right: 50px;
+        margin-left: 50px;
+   }
+    .b_text {
+         margin-right: 50px;
+         margin-left: 50px;
+    }
+    .b_container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas: 
+            "page1"
+            "page2"
+            "acute"
+            "chronic"
+            "article1"
+            "article2";
+      }
+}

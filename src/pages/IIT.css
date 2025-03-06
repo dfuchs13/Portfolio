@@ -1,0 +1,114 @@
+.IIT_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+.IIT_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+.phish {
+    display: block; /* Ensures it's treated as a block element */
+    max-width: 800px;
+    margin: 0 auto; /* Centers it horizontally */
+    text-align: center; /* Ensures inline content (like images) is centered */
+    padding-bottom: 80px;
+}
+
+.IIT_container2 {
+    display: grid;
+    grid-template-columns: repeat(1fr); /* Two equal columns */
+    grid-template-areas: 
+         "heart cyber"
+         "high birth"
+         "easter patty"
+         "ctrl beware"
+         "chalk halloween";
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    justify-items: center;
+    align-items: start;
+    margin: 0 auto; /* Centers the container */
+    overflow: hidden; /* Prevents horizontal scrolling */
+    padding-bottom: 40px;
+}
+.IIT_container2 img {
+    width: 100%; /* Fills grid column */
+    max-width: 600px; /* Prevents oversized images */
+    object-fit: contain; /* Makes all images the same height without distortion */
+    height: auto;
+}
+
+/* Assigning the grid areas */
+
+.heart { 
+    grid-area: heart; 
+    width: 100%;
+}
+.cyber { 
+    grid-area: cyber; 
+    width: 100%; 
+}
+.high { 
+    grid-area: high; 
+    width: 100%; 
+}
+.birth { 
+    grid-area: birth; 
+    width: 100%;
+}
+.easter { 
+    grid-area: easter; 
+    width: 100%; 
+}
+.patty { 
+    grid-area: patty; 
+    width: 100%; 
+}
+.ctrl { 
+    grid-area: ctrl; 
+    width: 100%; 
+}
+.beware { 
+    grid-area: beware; 
+    width: 100%;
+}
+.chalk { 
+    grid-area: chalk; 
+    width: 100%; 
+}
+.halloween { 
+    grid-area: halloween; 
+    width: 100%; 
+}
+
+@media (max-width: 1000px) {
+    .IIT_title {
+        margin-right: 50px;
+        margin-left: 50px;
+   }
+    .IIT_text {
+         margin-right: 50px;
+         margin-left: 50px;
+    }
+    .IIT_container2 {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas: 
+            "phish"
+            "heart"
+            "cyber"
+            "high"
+            "birth"
+            "easter"
+            "patty"
+            "ctrl"
+            "beware"
+            "chalk"
+            "halloween";
+      }
+      .phish { 
+        margin-top: 100px;
+      }
+}

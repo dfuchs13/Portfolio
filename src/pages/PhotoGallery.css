@@ -1,0 +1,19 @@
+.gallery-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .gallery-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures cropping instead of distortion */
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  

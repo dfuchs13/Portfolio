@@ -1,0 +1,118 @@
+.s_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+
+.s_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+
+.s_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default 3 columns */
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "bj bj type"
+        "bj2 bj2 sand" /* Adjusted for bj2 and sand to take up 50% width each */
+        "tea1 tea2 tea3"
+        "tea4 tea4 tea6"
+        "arches arches arches"
+        "church church church";
+    gap: 20px;
+    width: 100%;
+    max-width: 1300px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin: auto; /* Centers the container */
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Assigning the grid areas */
+.bj { 
+    grid-area: bj; 
+    width: 100%; 
+}
+.type { 
+    grid-area: type; 
+    width: 100%; 
+}
+.bj2 { 
+    grid-area: bj2; 
+    width: 100%; /* Takes up 50% of the page width */
+}
+.sand { 
+    grid-area: sand; 
+    width: 100%; /* Takes up 50% of the page width */
+    padding-top: 400px;
+}
+.tea1 { 
+    grid-area: tea1; 
+    width: 100%; 
+}
+.tea2 { 
+    grid-area: tea2; 
+    width: 100%; 
+}
+.tea3 { 
+    grid-area: tea3; 
+    width: 100%; 
+}
+.tea4 { 
+    grid-area: tea4; 
+    width: 100%; 
+}
+.tea6 { 
+    grid-area: tea6; 
+    width: 100%; 
+}
+.arches { 
+    grid-area: arches; 
+    width: 100%; 
+}
+.church { 
+    grid-area: church; 
+    width: 100%; 
+    margin-bottom: 40px;
+}
+
+.bj2 img, .sand img {
+    width: 100%; /* Ensures they scale correctly */
+    height: auto; /* Match container height */
+    object-fit: cover; /* Prevents cropping */
+}
+
+@media (max-width: 780px) {
+    .s_title {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .s_text {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .s_container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas: 
+            "bj"
+            "type"
+            "bj2"
+            "sand"
+            "tea1"
+            "tea2"
+            "tea3"
+            "tea4"
+            "tea6"
+            "arches"
+            "church"; /* Stacks all items vertically */
+    }
+    .sand { 
+        grid-area: sand; 
+        width: 100%; /* Takes up 50% of the page width */
+        padding-top: 0;
+
+    }
+}

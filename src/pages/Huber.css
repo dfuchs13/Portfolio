@@ -1,0 +1,39 @@
+.hub_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+.hub_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+.hub_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers posters horizontally */
+    gap: 60px; /* Adds spacing between posters */
+    width: 100%;
+    max-width: 1000px; /* Adjust max width */
+    margin: 0 auto; /* Centers container */
+}
+.hub_container img {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+.hub2 {
+    margin-bottom: 80px;
+}
+@media (max-width: 1000px) {
+    .hub_title {
+        margin-right: 50px;
+        margin-left: 50px;
+   }
+   .hub_text {
+    margin-right: 50px;
+    margin-left: 50px;
+   }
+}

@@ -1,0 +1,96 @@
+.l_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+.l_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+.rugby1 {
+    display: block; /* Ensures it's treated as a block element */
+    max-width: 400px;
+    margin: 0 auto; /* Centers it horizontally */
+    text-align: center; /* Ensures inline content (like images) is centered */
+    max-width: 400px;
+}
+
+.l_container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-areas: 
+         "farm1 farm2"
+         "skate1 skate2"
+         "bee errand";
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto; /* Centers the container */
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+.l_container2 img {
+    width: 100%; /* Makes images responsive within their grid cells */
+    max-width: 500px; /* Ensures they don’t get too big */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: contain;
+}
+/* Assigning the grid areas */
+
+.farm1 { 
+    grid-area: farm1; 
+    width: 100%;
+}
+.farm2 { 
+    grid-area: farm2; 
+    width: 100%; 
+}
+.skate1 { 
+    grid-area: skate1; 
+    width: 100%; 
+    max-height: 400px;
+}
+.skate2 { 
+    grid-area: skate2; 
+    width: 100%;
+    max-height: 400px; 
+}
+.bee { 
+    grid-area: bee; 
+    width: 100%; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.errand { 
+    grid-area: errand; 
+    width: 100%; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+@media (max-width: 1000px) {
+    .l_title {
+        margin-right: 50px;
+        margin-left: 50px;
+   }
+    .l_text {
+         margin-right: 50px;
+         margin-left: 50px;
+    }
+    .l_container2 {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas: 
+            "farm1"
+            "farm2"
+            "skate1"
+            "skate2"
+            "bee"
+            "errand";
+      }
+      .skate2 { 
+        margin-top: 100px;
+      }
+}

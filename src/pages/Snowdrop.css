@@ -1,0 +1,76 @@
+.sd_title {
+    font-family: 'Roboto', sans-serif;
+    margin: 200px 300px 0 300px;
+    font-size: larger;
+}
+.sd_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 300px 100px 300px;
+    line-height: 2;
+}
+.sd_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+         "hor_logo hor_logo hor_logo"
+         "sd_logos sd_logos sd_logos"
+         "label bottle bottle"
+         "brochure brochure brochure"
+         "cork cork jacket"
+         "pouring pouring pouring";
+    gap: 10px;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto; /* Centers the container */
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Assigning the grid areas */
+.hor_logo { 
+    grid-area: hor_logo; 
+    width: 100%; 
+}
+.sd_logos { 
+    grid-area: sd_logos; 
+    width: 100%; 
+}
+.label { 
+    grid-area: label; 
+    width: 100%; 
+    margin-top: 300px;
+}
+.bottle { 
+    grid-area: bottle; 
+    width: 100%; 
+}
+.brochure { 
+    grid-area: brochure; 
+    width: 100%; 
+}
+.cork { 
+    grid-area: cork; 
+    width: 100%; 
+    height: 100%;
+}
+.jacket { 
+    grid-area: jacket; 
+    width: 100%; 
+    height: 100%;
+}
+.pouring { 
+     grid-area: pouring;
+     width: 100%; 
+     margin-bottom: 10px;
+    }
+
+@media (max-width: 1000px) {
+    .sd_title {
+        margin-right: 50px;
+        margin-left: 50px;
+   }
+    .sd_text {
+         margin-right: 50px;
+         margin-left: 50px;
+    }
+}
