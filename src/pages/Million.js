@@ -16,7 +16,7 @@ function Million() {
         </div>
             <div class="m-container">
                 <video className="style-video" controls>
-                    <source src={MVideo} type="video/mov" />
+                    <source src={MVideo} type="video/mp4" />
                 </video>
           </div></>
   )
