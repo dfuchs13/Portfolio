@@ -34,7 +34,7 @@ const PhotoGallery = () => {
       </div>
       <div className="photo_text">
             <p>
-            During the height of COVID-19, Viterbo Universitys musical theater students came together virtually to perform A Million Dreams. I edited this video to bring their voices and performances to life, seamlessly weaving together individual recordings into a cohesive and moving final piece. This project not only highlighted the resilience and creativity of the performers but also captured the spirit of connection and hope during a challenging time.
+              This collection showcases my passion for capturing moments through a creative lens, featuring a variety of subjects from landscapes and cityscapes to portraits and action shots. Each image reflects my eye for composition, lighting, and storytelling. Click on any photo to view it in full detail with an interactive lightbox experience. Enjoy exploring my work!
             </p>
       </div>
 
