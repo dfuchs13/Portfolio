@@ -1,14 +1,21 @@
+.photo_title {
+  font-family: 'Roboto', sans-serif;
+  margin: 200px 300px 0 300px;
+  font-size: larger;
+}
+
+.photo_text {
+  font-family: 'Roboto', sans-serif;
+  margin: 100px 300px 100px 300px;
+  line-height: 2;
+}
+
 .gallery-container {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
   }
   
-  .gallery-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
   
   img {
     width: 100%;

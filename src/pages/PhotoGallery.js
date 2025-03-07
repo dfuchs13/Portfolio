@@ -5,6 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 import "react-photo-album/styles.css";
 import "./PhotoGallery.css";
 
+
 // Dynamically import all images from the public/images folder
 const importAll = (r) =>
   r.keys().map((file, index) => ({
@@ -28,7 +29,14 @@ const PhotoGallery = () => {
 
   return (
     <div className="gallery-container">
-      <h1 className="gallery-title">My Photo Gallery</h1>
+      <div className="photo_title">
+          <h1>| Photography |</h1>
+      </div>
+      <div className="photo_text">
+            <p>
+            During the height of COVID-19, Viterbo Universitys musical theater students came together virtually to perform A Million Dreams. I edited this video to bring their voices and performances to life, seamlessly weaving together individual recordings into a cohesive and moving final piece. This project not only highlighted the resilience and creativity of the performers but also captured the spirit of connection and hope during a challenging time.
+            </p>
+      </div>
 
       <PhotoAlbum
         layout="rows"
