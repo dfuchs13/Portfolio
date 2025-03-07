@@ -24,3 +24,13 @@
     border-radius: 8px; /* Optional: Rounded corners */
   }
   
+  @media (max-width: 768px) {
+    .photo_title {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .photo_text {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+  }
